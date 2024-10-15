@@ -1,5 +1,8 @@
 import random
 import math
+import time
+
+inicio = time.time()
 
 # Función para calcular la distancia euclidiana entre dos puntos
 def distancia_euclidiana(p1, p2):
@@ -35,3 +38,6 @@ par, distancia = puntos_mas_cercanos(puntos)
 print(f"Puntos generados: {puntos}")
 print(f"Par de puntos más cercano: {par}")
 print(f"Distancia mínima: {distancia}")
+
+fin = time.time()
+print(f"Tiempo de ejecucion:{fin-inicio}")
